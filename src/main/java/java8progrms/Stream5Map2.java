@@ -1,9 +1,10 @@
 package java8progrms;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class Stream3Map1 {
+public class Stream5Map2 {
 
 	public static void main(String[] args) {
 
@@ -15,7 +16,7 @@ public class Stream3Map1 {
 		marks.add(5);
 		System.out.println(marks);
 
-		Integer lis = marks.stream().sorted(Collections.reverseOrder()).limit(2).skip(1).findFirst().get();
+		List<Integer> lis = marks.stream().map(i -> i+100).collect(Collectors.toList());
 		System.out.println(lis);
 	}
 

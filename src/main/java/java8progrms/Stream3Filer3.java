@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Stream2Filer3 {
+public class Stream3Filer3 {
 
 	public static void main(String[] args) {
 

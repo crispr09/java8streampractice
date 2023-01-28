@@ -3,7 +3,9 @@ package java8progrms;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/*
+ * filer even numbers only
+ */
 public class Stream1Filer1 {
 
 	public static void main(String[] args) {

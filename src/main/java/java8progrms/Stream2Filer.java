@@ -23,8 +23,5 @@ public class Stream2Filer {
 		Integer lis =marks.stream().sorted(Collections.reverseOrder()).limit(2).skip(1).findFirst().get();
 		System.out.println(lis);	
 	}
-	public void add5GraceMarks(ArrayList<Integer> marks) {
-		
-	}
 
 }

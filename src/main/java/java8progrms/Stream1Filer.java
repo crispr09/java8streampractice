@@ -20,18 +20,6 @@ public class Stream1Filer {
 		System.out.println(li);
 		
 		
-		//
-		List<Integer> updatedMarks = marks.stream().map(i->i+5).collect(Collectors.toList());
-		System.out.println(updatedMarks);
-		
-		
-		
-		Integer lis =marks.stream().sorted(Collections.reverseOrder()).limit(2).skip(1).findFirst().get();
-		System.out.println(lis);
-	
-	}
-	public void add5GraceMarks(ArrayList<Integer> marks) {
-		
 	}
 
 }

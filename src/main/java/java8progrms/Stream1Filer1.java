@@ -1,11 +1,10 @@
 package java8progrms;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Stream2Filer {
+public class Stream1Filer1 {
 
 	public static void main(String[] args) {
 
@@ -16,12 +15,10 @@ public class Stream2Filer {
 		marks.add(4);
 		marks.add(5);
 		System.out.println(marks);
-		//
-		List<Integer> updatedMarks = marks.stream().map(i->i+5).collect(Collectors.toList());
-		System.out.println(updatedMarks);
+		List<Integer> li = marks.stream().filter(i->i%2!=0).collect(Collectors.toList());
+		System.out.println(li);
 		
-		Integer lis =marks.stream().sorted(Collections.reverseOrder()).limit(2).skip(1).findFirst().get();
-		System.out.println(lis);	
+		
 	}
 
 }
